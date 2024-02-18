@@ -277,7 +277,12 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <h3>GOAL</h3>
-                                    <p class="text-left">The goal of this lab was to get aquainted with the Artemis nano, and using BlE to send data between the Artemis and our computer.</p>
+                                    <p class="text-left">The goal of this lab was to get aquainted with the Artemis nano, and using BLE to send data between the Artemis and our computer.
+                                    <h3>PART 1</h3>
+                                    <p class="text-left"> The first step was to download the arduino IDE from this <a href="https://www.arduino.cc/en/main/software">link</a>. We then ran the example code "Blink it Up" </p>
+                                    <div class="embed-container">
+                                        <iframe width="560" height="315" src="https://youtube.com/shorts/wXuTAqZDFSc?feature=share" frameborder="0" allowfullscreen></iframe>
+                                        </div>
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
