@@ -281,7 +281,7 @@
                                     <h3>PART 1</h3>
                                     <p class="text-left"> The first step was to download the arduino IDE from this <a href="https://www.arduino.cc/en/main/software">link</a>. We then ran the example code "Blink it Up" </p>
                                     <div class="embed-container">
-                                        <iframe width="560" height="315" src="https://youtube.com/shorts/wXuTAqZDFSc?si=68cVY2gi_4exOGKj" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RIaZ0L9KGRw?si=U6dipNskuULh8Gl8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                         </div>
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
