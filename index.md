@@ -71,6 +71,7 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                            <h5 class="text-center">LAB 1</h5>
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
