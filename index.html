@@ -305,9 +305,19 @@
                                     </code>
                                      <p class="text-left">I struggled with this for hours until I realized that when adding a commnad you much also update the cmd_types document</p>
                                      <img class="img-fluid rounded mb-5" src="assets/img/cmd_types.png" alt="..." />
-                                     <h3>GET_TIME_MILLIS</h3>
-
-
+                                     <h3>Notification Handler</h3>
+                                     <p class="text-left">The third task was to set up a notification handler. This is usefull when you dont know exactly when the data will be sent</p>
+                                     <img class="img-fluid rounded mb-5" src="assets/img/notify.png" alt="..." />
+                                     <h3>Notification Loop</h3>
+                                     <img class="img-fluid rounded mb-5" src="assets/img/Notify_loop.png" alt="..." />
+                                     <p class="text-left">Here I got multiple notifications then averaged them to find the data transfer rate. which is around .00578 seconds</p>
+                                     <h3>Send Time Data </h3>
+                                     <p class="text-left">for this task we first got time stamped data, and storred them in an array "time_arr" in arduino </p>
+                                     <img class="img-fluid rounded mb-5" src="assets/img/G_T_loop.png" alt="..." />
+                                     <img class="img-fluid rounded mb-5" src="assets/img/S_D_loop.png" alt="..." />
+                                     <p class="text-left">after collecting the data, it is then sent to our computer</p>
+                                     <img class="img-fluid rounded mb-5" src="assets/img/Notify_timez.png" alt="..." />
+                                     <p class="text-left">the time divsion using this method what .01 seconds which is slower than the previous method which does not make sense. In retrospect the command the transfer the dat should be outside the foor loop</p>
                                       <b></b>
                                      <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
