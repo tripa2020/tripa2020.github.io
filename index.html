@@ -318,7 +318,9 @@
                                      <p class="text-left">after collecting the data, it is then sent to our computer</p>
                                      <img class="img-fluid rounded mb-5" src="assets/img/Notify_timez.png" alt="..." />
                                      <p class="text-left">the time divsion using this method what .01 seconds which is slower than the previous method which does not make sense. In retrospect the command the transfer the dat should be outside the foor loop</p>
-                                      <b></b>
+                                     <h3>Send Temp Time Data </h3>
+                                     <b></b>
+
                                      <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -340,8 +342,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
+                                    <h2>LAB 2<h3 class="text-warning">IMU</h3></h2>                                    <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -350,7 +351,15 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">The purpose of this lab was to set up the IMU, and record data</p>
+                                    <h3>PART 1</h3>
+                                    <p class="text-left">The first step of the lab was to just use the IMU example code and show that the IMU records data</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/IMU_basic_demo.png" alt="..." />
+                                    <p class="text-left">The code doesn't run untill the AD0_VAL is set to 0. The AD0_Val is the last bit of I2C address is only zero when the ADR jumper is closed. This fucntionality supports multiple sensors.Since we are only using 1 sensor the AD0_VAL is zero</p>
+                                    <h4>Accelerometer and Gyroscope</h4>
+                                    <p class="text-left">The sensor returns the Ax,Ay,Az and the d0x,d0y,d0z. Using these values and simple arthematic the pitch roll and yaw can be computed from either data set.</p>
+                                    <h3>PART 2 - Accelerometer</h3>
+                                    
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
