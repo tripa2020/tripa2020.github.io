@@ -359,7 +359,34 @@
                                     <h4>Accelerometer and Gyroscope</h4>
                                     <p class="text-left">The sensor returns the Ax,Ay,Az and the d0x,d0y,d0z. Using these values and simple arthematic the pitch roll and yaw can be computed from either data set.</p>
                                     <h3>PART 2 - Accelerometer</h3>
-                                    
+                                    <p class="text-left"> the pitch and roll using accelerometer data can be computed using the following formulas. </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/a_form.png" alt="..." />
+                                    <p class="text-left">These formulas where implemented on the Artemis as follows</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Art_pit.png" alt="..." />
+                                    <p class="text-left">As I knew we would be implementing other sensors. I decided to create a class Sensor.h. This allowed for reusable and easy implementation of other sensors</p>
+                                    <p class="text-left">The data was very noisy as demonstrated by the videos below </p>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b2RUPml0bT8?si=daVcW2vUIXpLu7xr"></iframe>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b2RUPml0bT8?si=F_U64Z8zG7-fYjeC"></iframe>
+                                    <p class="text-left">Below are the outputs at -90 pitch and 90 roll from accelerometer data</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/-90_pit.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/90_roll.png" alt="..." />
+                                    <p class="text-left">The sensor was analyzed in the frequency domain, and for both pitch and roll there seemed be a very high gain but only at very low frequencies </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Freq_anal.png" alt="..." />
+                                    <p class="text-left">A low pass filter was implemented based on equation from class</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Alpha_form.png" alt="..." />
+                                    <p class="text-left">however the results were similar</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/lpf_freq_anal.png" alt="..." />
+
+
+
+
+
+
+                                 
+
+
+
+
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
