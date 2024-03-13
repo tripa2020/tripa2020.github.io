@@ -376,7 +376,20 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/Alpha_form.png" alt="..." />
                                     <p class="text-left">however the results were similar</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/lpf_freq_anal.png" alt="..." />
-
+                                    <p class="text-left">low pass filter implementation code written is below<br></br>
+                                        <code> float pitch_lpf = a*data_p[x] + (1+a)*data_p[x-1];
+                                            float roll_lpf =  a*data_r[x] + (1+a)*data_r[x-1];
+                                            tx_estring_value.clear();
+                                            tx_estring_value.append(timez[x]);
+                                            tx_estring_value.append(",");
+                                            //tx_estring_value.append(data_p[x]);
+                                            tx_estring_value.append(pitch_lpf);
+                                            tx_estring_value.append(",");
+                                            //tx_estring_value.append(data_r[x]);
+                                            tx_estring_value.append(roll_lpf);
+                                       </code>
+                                       <h3>PART 3 - Gyroscope</h3>
+                                       
 
 
 
