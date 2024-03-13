@@ -389,7 +389,46 @@
                                             tx_estring_value.append(roll_lpf);
                                        </code>
                                        <h3>PART 3 - Gyroscope</h3>
-                                       
+                                       <p class="text-left">the next task was to implement the gyroscope. I added the gyroscope measurements to my sensor.h class </p>
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gyro_class.png" alt="..." />
+                                        <p class="text-left">Below are the results<br></br>
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gy_pit.png" alt="..." />
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gy_roll.png" alt="..." />
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gy_yaw.png" alt="..." />
+                                        <p class="text-left">The results from the gyroscope even when still seemed to drift </p>
+                                        <p class="text-left">The solution was to was implement sensor fusion between the accelerometer and gyroscope. </p>
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gy_lpf.png" alt="..." />
+                                        <p class="text-left">the results for were more stable with less drift </p>
+                                        <img class="img-fluid rounded mb-5" src="assets/img/lpf_gy_rol.png" alt="..." />
+                                        <img class="img-fluid rounded mb-5" src="assets/img/lfp_gy_pit.png" alt="..." />
+                                        <p class="text-left">the result below are the frequency results for the gyroscope </p>
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gy_lpf_novib.png" alt="..." />
+                                        <img class="img-fluid rounded mb-5" src="assets/img/gy_lpf_vibrations.png" alt="..." />
+                                        <h3>PART 4 - Data Sampling rate </h3>
+                                        <p class="text-left">This task for testing how fast we could collect data from the IMU. This was accomplished by taking out print statements, and streamlining the code execution. Using time stamps I implements a python function to calcuate the speed of data collection</p>
+                                        <img class="img-fluid rounded mb-5" src="assets/img/transfer rate.png" alt="..." />
+                                        <p class="text-left">The sampling rate was found to around 63 measurements a second. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
