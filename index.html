@@ -447,6 +447,8 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">The purpose of this lab was to set up the TOF establish connection with both of them and record data</p>
                                     <h3>PART 1</h3>
+                                    <p class="mb-4">Using the provide wire I2C code this is the Artemis scanning for I2C, as demonstrated only one I2C device is shown this is the I2C adresses this is because they own the same address. The Port is the I2C bus.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/scanning.png" alt="..." />
                                     <p class="text-left">The first step was to connect the both of the TOF to the Artemis and establish an I2C conection. Below is a diagram of the wiring</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/I2C.png" alt="..." />
                                     <p class="text-left">And the subsequent code to facilitate the connection. The issue Arises from the fact that both of the TOF have the same I2C addresses. In order the connect both of the TOF A must be shut off with the xshut pin the I2C adress of TOF B changed before both of the TOF can operate simultaneously</p>
