@@ -537,6 +537,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
+                                    <h2>LAB 5<h3 class="text-warning">Linear PID control and Linear interpolation</h3></h2>
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
@@ -547,8 +548,18 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <h3>PART 1-Prelab</h3> <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <p class="mb-4">The first part of this labe dealt with sending data over bluetooth. The method I chose was to have a fucntion for recording and storing values in arrays, to then be be processed when I send the command "write" a snippet is provided below </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/record_d.png" alt="..." />
+                                    <p class="mb-4">The data was then split and interpreted using the Notify function in python</p>
+                                    <h3>PART 2</h3> <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <p class="mb-4">The next task was implementing the PID, for my PID I chose to use just a P controller as when the values are not changing very quickly it was the easiest to tinker with. Below is my implementation</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/PID_imp.png" alt="..." />
+                                    <p class="mb-4">For gathering data as quickly as possible, the method of linear interpolation was used so when even when data was not ready the PID would still be running, below is the impletmentation.
+                                    <img class="img-fluid rounded mb-5" src="assets/img/inter.png" alt="..." />
+                                    <p class="mb-4">Using this method the data rate was 271 readings per/second which suffient </p>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W7wB_u9CUxE?si=eQv--7ZsoaF7WU0y"></iframe>
+                                    <p class="mb-4">this was my sucessful run of stopping 1 foot away from the wall</p>
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
@@ -569,6 +580,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
+                                    <h2>LAB 6<h3 class="text-warning">orientation PID control </h3></h2>
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
@@ -579,7 +591,20 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <h3>PART 1-Prelab</h3> <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <p class="mb-4">for this lab we were tasked with orientation control using the IMU. In order to implement this I set up a class called sensor.h and used the Digital motion processor this ended in very stable yaw values</p>
+                                    <p class="mb-4">The data transfer rate was around around 210 this leads me to believe this is upper limit for the PID control loop </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/DMP_new.png" alt="..." />
+                                    <h3>PART 2</h3> <button class="btn btn-primary" data-bs-dismiss="modal"></button>
+                                    <p class="mb-4">These are the plots generated for theta vs time </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Theta_t.png" alt="..." />
+                                    <p class="mb-4">These are the plots generated for control input</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/Control.png" alt="..." />
+                                    <p class="mb-4">This was is the video for the sucessfull test run  </p>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W7wB_u9CUxE?si=eQv--7ZsoaF7WU0y"></iframe>
+
+                
+                                    <img class="img-fluid rounded mb-5" src="assets/img/DMP.jpeg" alt="..." />
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
